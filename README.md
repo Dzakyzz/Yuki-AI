@@ -50,11 +50,13 @@ pip install -r requirements.txt
 
 ### 3. Isi API Key
 
-Buka `main.py`, cari baris ini dan ganti dengan API key kamu:
+Buka file **`.env`** yang ada di folder project, lalu ganti bagian ini:
 
-```python
-API_KEY = 'ISI_API_KEY_KAMU_DISINI'
+```env
+GEMINI_API_KEY=ISI_API_KEY_KAMU_DISINI
 ```
+
+Ganti `ISI_API_KEY_KAMU_DISINI` dengan API key Gemini kamu (dapatkan gratis di [Google AI Studio](https://aistudio.google.com/)), lalu simpan file-nya. Selesai!
 
 ### 4. Jalankan
 
