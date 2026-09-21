@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# File lama / testing
+testing/
+y-ai.py
+y-aitest.py
+y-aitestn.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
