@@ -1,3 +1,6 @@
+# Secrets — jangan di-push ke GitHub!
+.env
+
 # Python cache
 __pycache__/
 *.py[cod]

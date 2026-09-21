@@ -1,4 +1,5 @@
 import os, sys, time, threading, ctypes, tkinter as tk
+from dotenv import load_dotenv
 from datetime import datetime, date
 from PIL import Image, ImageTk, ImageDraw
 import google.generativeai as genai
@@ -11,11 +12,11 @@ except:
     except: pass
 
 # 2. Konfigurasi Gemini AI & Prompt Persona
-# Simpan API key di environment variable: GEMINI_API_KEY
-# Cara set: di terminal jalankan -> set GEMINI_API_KEY=api_key_kamu (Windows)
+# Edit file .env di folder ini, isi GEMINI_API_KEY dengan API key kamu.
+load_dotenv()  # Otomatis baca file .env
 API_KEY = os.environ.get('GEMINI_API_KEY', '')
-if not API_KEY:
-    print("[ERROR] API key belum diset! Set environment variable GEMINI_API_KEY dulu.")
+if not API_KEY or API_KEY == 'ISI_API_KEY_KAMU_DISINI':
+    print("[ERROR] Buka file .env dan isi GEMINI_API_KEY dengan API key kamu!")
     sys.exit(1)
 genai.configure(api_key=API_KEY)
 
